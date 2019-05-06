@@ -28,5 +28,5 @@ def count_elements(arr)
 end
 
 def merge_data(d1, d2) 
-  d1.merge(d2)
+  d1[0].merge(d2[0])
 end
