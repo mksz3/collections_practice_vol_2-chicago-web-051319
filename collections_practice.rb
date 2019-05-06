@@ -37,7 +37,7 @@ def find_cool(arr)
   output = []
   arr.each { |i| 
     if i[:temperature] == 'cool'
-      output < i 
+      output << i 
     end
   }
   output
