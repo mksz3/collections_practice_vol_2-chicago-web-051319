@@ -26,3 +26,7 @@ def count_elements(arr)
     counts.map { |hash, count| hash[:count] = count }
   return counts.keys
 end
+
+def merge_data(d1, d2) 
+  
+end
