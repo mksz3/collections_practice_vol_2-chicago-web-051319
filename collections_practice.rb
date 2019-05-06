@@ -52,19 +52,3 @@ def organize_schools(schools)
   }
   organized
 end
-
-
-
-# def organize_schools(schools)
-#   organize_schools = {}
-#   schools.each do |school_name, place|
-#     place.each do |location, city|
-#       if organize_schools.has_key?(city)
-#         organize_schools[city] << school_name
-#       else
-#         organize_schools[city] = [school_name]
-#       end
-#     end
-#   end
-#   organize_schools
-# end
