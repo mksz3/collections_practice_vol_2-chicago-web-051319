@@ -44,8 +44,13 @@ def find_cool(arr)
 end
 
 def organize_schools(schools)
-  schools.each { |school, location|
-    location.each }{ |l}
+  organized = {}
+  schools.each { |school, locations|
+    locations.each { |location, city|
+      organized.has_key?(city) ? organized[city] << school : organizeds[city] = [school]
+    }
+  }
+  organized
 end
 
 
