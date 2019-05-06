@@ -27,6 +27,10 @@ def count_elements(arr)
   return counts.keys
 end
 
-def merge_data(d1, d2) 
-  d1[0].merge(d2[0])
+def merge_data(keys, data) 
+  keys.each { |name_hash|
+    data.each { |hash|
+      name_hash.merge!(hash[name_hash[:first_name]])
+      }
+    }
 end
