@@ -28,7 +28,7 @@ end
 
 def count_elements(arr) 
   obj = {}
-  arr.each { |item| 
+  arr.each { |item, val| 
     if obj[item]
       obj[item]["count"] += 1
     else 
