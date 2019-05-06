@@ -22,8 +22,8 @@ end
 
 def count_elements(arr) 
   counts = Hash.new
-  array.collect {|element| counts[element]+=1 }
-    counts.collect do |hash, number|
+  array.map {|element| counts[element]+=1 }
+    counts.map do |hash, number|
       hash[:count] = number
     end
   counts.keys
