@@ -22,7 +22,7 @@ end
 
 def count_elements(arr) 
   counts = {}
-  arr.map {|element| counts[element]+=1 }
+  arr.map {|element| counts[element] +=1 }
     counts.map { |hash, count| hash[:count] = count }
   return counts.keys
 end
