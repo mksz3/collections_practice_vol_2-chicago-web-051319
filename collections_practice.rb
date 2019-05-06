@@ -29,10 +29,10 @@ end
 def count_elements(arr) 
   obj = {}
   arr.each { |item| 
-    if obj[:item]
-      obj[:item]["count"] += 1
+    if obj[item]
+      obj[item]["count"] += 1
     else 
-      obj[:item]["count"] = 1
+      obj[item]["count"] = 1
     end
   }
   return [obj]
