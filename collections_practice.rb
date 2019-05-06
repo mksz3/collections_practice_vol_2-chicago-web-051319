@@ -33,4 +33,12 @@ def merge_data(keys, data)
     }
 end
 
-def find_cool
+def find_cool(arr) 
+  output = []
+  arr.each { |i| 
+    if i[:temperature] == 'cool'
+      output < i 
+    end
+  }
+  output
+end
