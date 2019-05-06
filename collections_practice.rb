@@ -1,19 +1,13 @@
 def begins_with_r(arr)
-  arr.all? { |item|
-    item[0].downcase == 'r'
-  }
+  arr.all? { |item| item[0].downcase == 'r' }
 end
 
 def contain_a(arr)
-  arr.select { |item| 
-    item.downcase.include?('a')
-  }
+  arr.select { |item| item.downcase.include?('a') }
 end
 
 def first_wa(arr) 
-  arr.find { |item| 
-    item[0].downcase == 'w' && item[1].downcase == 'a'
-  }
+  arr.find { |item| item[0].downcase == 'w' && item[1].downcase == 'a' }
 end
 
 def remove_non_strings(arr) 
@@ -27,13 +21,10 @@ def remove_non_strings(arr)
 end
 
 def count_elements(arr) 
-  obj = {}
-  arr.each { |item, val| 
-    if obj[item]
-      obj[item]["count"] += 1
-    else 
-      obj[item]["count"] = 1
+  counts = Hash.new
+  array.collect {|element| counts[element]+=1 }
+    counts.collect do |hash, number|
+      hash[:count] = number
     end
-  }
-  return [obj]
+  counts.keys
 end
