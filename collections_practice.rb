@@ -44,5 +44,6 @@ def find_cool(arr)
 end
 
 def organize_schools(schools)
-  schools.each { |school, location| }
+  schools.each { |school, location|
+    location.each { |}}
 end
