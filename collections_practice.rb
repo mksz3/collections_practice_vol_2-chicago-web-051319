@@ -45,5 +45,5 @@ end
 
 def organize_schools(schools)
   schools.each { |school, location|
-    location.each { |l}}
+    location.each }{ |l}
 end
