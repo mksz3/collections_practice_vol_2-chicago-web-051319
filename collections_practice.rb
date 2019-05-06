@@ -21,10 +21,8 @@ def remove_non_strings(arr)
 end
 
 def count_elements(arr) 
-  counts = Hash.new
+  counts = {}
   array.map {|element| counts[element]+=1 }
-    counts.map do |hash, number|
-      hash[:count] = number
-    end
-  counts.keys
+    counts.map { |hash, count| hash[:count] = count }
+  return counts.keys
 end
