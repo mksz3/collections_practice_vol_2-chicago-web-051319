@@ -47,7 +47,7 @@ def organize_schools(schools)
   organized = {}
   schools.each { |school, locations|
     locations.each { |location, city|
-      organized.has_key?(city) ? organized[city] << school : organizeds[city] = [school]
+      organized.has_key?(city) ? organized[city] << school : organized[city] = [school]
     }
   }
   organized
